@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RemindMe</string>
+    <string name="my_reminders">My Reminders</string>
 </resources>
