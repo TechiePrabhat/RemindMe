@@ -1,4 +1,4 @@
-package com.crafter.remindme
+package com.crafter.remindme.ui.component.reminderList
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

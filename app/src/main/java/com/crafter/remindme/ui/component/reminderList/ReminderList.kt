@@ -1,22 +1,21 @@
-package com.crafter.remindme
+package com.crafter.remindme.ui.component.reminderList
 
 import android.os.Bundle
-import android.view.ViewGroup
-import android.view.ViewGroup.MarginLayoutParams
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.updateLayoutParams
 import androidx.core.view.updatePadding
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.crafter.remindme.data.dto.Reminder
 import com.crafter.remindme.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 import java.util.ArrayList
 
-class MainActivity : AppCompatActivity() {
+@AndroidEntryPoint
+class ReminderList : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private lateinit var reminderAdapter:ReminderAdapter
+    private lateinit var reminderAdapter: ReminderAdapter
     private var reminderList:ArrayList<Reminder> =ArrayList<Reminder>()
     override fun onCreate(savedInstanceState: Bundle?) {
        enableEdgeToEdge()
@@ -46,7 +45,7 @@ class MainActivity : AppCompatActivity() {
             ))
         }
 
-        reminderAdapter=ReminderAdapter(reminderList)
+        reminderAdapter= ReminderAdapter(reminderList)
 
         binding.recyclerView.layoutManager=LinearLayoutManager(this)
         binding.recyclerView.adapter=reminderAdapter

@@ -11,6 +11,7 @@ activity = "1.9.1"
 constraintlayout = "2.1.4"
 ksp ="1.9.0-1.0.13"
 roomKtx = "2.6.1"
+hiltAndroid = "2.52"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -23,9 +24,12 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
 androidx-room-complier = { group = "androidx.room", name = "room-compiler", version.ref = "roomKtx" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltAndroid" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltAndroid" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-ksp ={id="com.google.devtools.ksp", version.ref="ksp"}
+hilt-android={id="com.google.dagger.hilt.android", version.ref="hiltAndroid"}
 
