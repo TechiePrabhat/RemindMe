@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">RemindMe</string>
     <string name="my_reminders">My Reminders</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="add_reminder_title">Add Reminder</string>
+    <string name="reminder_list_title">My Reminders</string>
 </resources>
